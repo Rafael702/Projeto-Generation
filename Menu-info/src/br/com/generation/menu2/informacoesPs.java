@@ -12,37 +12,50 @@ public class informacoesPs extends Regiao{
 		
 	}
 	
-	public static void infoPaciente() {
+	public static void infoPaciente() throws InterruptedException {
+		
 		Scanner sc = new Scanner(System.in);
 		String nome; 
 		String zona = null;
 		
 		nomePacient();
-		nome = sc.next();
+		nome = sc.next();	
+		Thread.sleep(1000);
+
 		
 		System.out.println("\n============================================");
-		System.out.println("    EM CASO DE URGÃŠNCIA, DIGITE [1] ");
+		System.out.println("    EM CASO DE URGÊNCIA, DIGITE [1] ");
 		System.out.println("    CASO QUEIRA SE CADASTRAR, DIGITE [2] ");
 		System.out.println("    CASO VOCÊ QUEIRA SAIR DO PROGRAMA, DIGITE [0] ");
 		
 		int sos;
 		sos = sc.nextInt();
 		
+		
 		do {
 			if(sos == 1) {
 			System.out.println("\n================================================================");
 			System.out.println("   Mantenha a calma " + nome + ", estamos aqui para te ajudar! ");
 			System.out.println("   Você será direcionado a um agente humano!   ");
-			System.out.println("================================================================");
-				break;
+			System.out.println("Digite 1, para seguir com o cadastro e ser direcionado ao agente humano");
+			System.out.println("Ou, digite 0 para sair do programa");
+			int segue = sc.nextInt();
+			
+			if(segue == 1) {
+				Regiao(zona);
+			}
+			else{
+
+				System.exit(0);
 			}
 			 
 			/**/
 			// criar ramificaÃ§Ã£o/caminho pro SOS
 			
-			if(sos ==2) {
+			}if(sos ==2) {
 			
-			
+				Thread.sleep(1300);
+				
 			
 			System.out.println("============================================");
 			System.out.println("\nOk " + nome + "! Agora você será nossa prioridade.");
@@ -50,14 +63,14 @@ public class informacoesPs extends Regiao{
 			int idadePaciente; 
 			idadePaciente = sc.nextInt();
 			
-			
+			Thread.sleep(1000);
 			System.out.println("=============================================");
 			System.out.println("Certo " + nome + "! São mais algumas perguntas.");
 			System.out.println("=============================================");
 			
+			Thread.sleep(1000);
 			
-			
-			System.out.println("\nQual gÃªnero vocÃª se identifica?");		
+			System.out.println("\nQual gênero você se identifica?");		
 			int [] genero = new int [6];
 			
 			genero[0] = 1;
@@ -115,19 +128,24 @@ public class informacoesPs extends Regiao{
 				System.out.println("=========================");
 				// precisa voltar pras opÃ§Ãµes
 			}
-			
-			else {
+				
+				
+			Regiao(zona);
+			}else {
 				System.out.println("    EM CASO DE URGENCIA, DIGITE [1] ");
 				System.out.println("    CASO QUEIRA SE CADASTRAR, DIGITE [2] ");
 				System.out.println("    CASO VOCÊ QUEIRA SAIR DO CADASTRO, DIGITE [0] ");
 				sos = sc.nextInt();
 				
-			}
-			
-						}
+				}
+	
+	
 			}while(sos !=0);
 		
-					Regiao(zona);
-		}
+				
+		
+	
+
+	}
 	
 }

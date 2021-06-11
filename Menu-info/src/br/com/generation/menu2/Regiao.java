@@ -12,10 +12,10 @@ public class Regiao {
 	String  string [] = new String [4];
 	
 	
-	string[0] = "Código: Ghetsksjdksfjsfsd89";
-	string[1] = "Código: Ghetsdadadhasjkd78";		
-	string[2] = "Código: Ghetsdadadhdjdsdd55";
-	string[3] = "Código: Ghetsdadadddsdswut71";		
+	string[0] = "Protocolo: Ghetsksjdksfjsfsd89";
+	string[1] = "Protocolo: Ghetsdadadhasjkd78";		
+	string[2] = "Protocolo: Ghetsdadadhdjdsdd55";
+	string[3] = "Protocolo: Ghetsdadadddsdswut71";		
 			
 	System.out.println("[1] --->" + "Zona Norte\n");
 	System.out.println("[2] --->" + "Zona Sul\n");
@@ -41,9 +41,6 @@ public class Regiao {
 		
 	
 		}
-			
-	
-		
 		
 	}
 }
