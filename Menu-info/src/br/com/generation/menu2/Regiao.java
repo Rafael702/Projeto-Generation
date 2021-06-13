@@ -1,14 +1,14 @@
 package br.com.generation.menu2;
 
-import java.util.Scanner;
 
-public class Regiao {
+public class Regiao extends informacoesPs{
 	
 	
 	
-	public static void Regiao(String name) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Em qual regiÃ£o de SÃ£o Paulo vocÃª mora?");
+	public  void Regiao() {
+
+
+	System.out.println("Em qual região de São Paulo você mora?");
 	String  string [] = new String [4];
 	
 	
@@ -22,17 +22,17 @@ public class Regiao {
 	System.out.println("[3] --->" + "Zona Leste\n");
 	System.out.println("[4] --->" + "Zona Oeste\n");
 	
-	int reg;
 	
-	reg = sc.nextInt();
 	
-	if(reg==1) {
+	setReg(sc.nextInt());
+	
+	if(getReg()==1) {
 		System.out.println("Se dirija a uma unidade de saúde mais próxima com o código abaixo: ");
 		System.out.println(string[0]);
-	}else if(reg == 2) {
+	}else if(getReg() == 2) {
 		System.out.println("Se dirija a uma unidade de saúde mais próxima com o código abaixo: ");
 		System.out.println(string[1]);
-	}else if (reg == 3){
+	}else if (getReg() == 3){
 		System.out.println("Se dirija a uma unidade de saúde mais próxima com o código abaixo: ");
 		System.out.println(string[2]);
 	}else {
