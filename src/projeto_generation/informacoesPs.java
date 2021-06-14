@@ -1,4 +1,4 @@
-package br.com.generation.menu2;
+package projeto_generation;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class informacoesPs {
 	Scanner sc = new Scanner(System.in);
 	
 	private String nome;
-	private int sos;
+	private int sos = 7;
 	private int segue;
 	private int reg;
 	private int idade;

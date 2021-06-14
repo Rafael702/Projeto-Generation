@@ -1,6 +1,19 @@
-package br.com.generation.menu2;
+package projeto_generation;
 
-public class condicionalGen extends genero{
+public class genero extends informacoesPs{
+	
+	public void indiceGenero() {
+		
+		System.out.println("\nQual gênero você se identifica?");		
+						
+		System.out.println("\n[1] Homem cis");
+		System.out.println("[2] Mulher cis");
+		System.out.println("[3] Homem trans");
+		System.out.println("[4] Mulher trans");
+		System.out.println("[5] Não Binárie");
+		System.out.println("[6] Prefiro não dizer");
+		
+	}
 	
 	public void condGen(informacoesPs objeto) {
 		
@@ -10,33 +23,33 @@ public class condicionalGen extends genero{
 		do {
 		if(objeto.getGenero() == 1) {
 			System.out.println("============================================");
-			System.out.println("Perfeito. Você se identifica como homem cis!");
+			System.out.println("Perfeito. Você se identifica como HOMEM CIS!");
 			System.out.println("============================================");
 			
 			
 		}else if(objeto.getGenero() == 2) {
 			System.out.println("============================================");
-			System.out.println("Perfeito. VocÃª se identifica como mulher cis!");
+			System.out.println("Perfeito. Você se identifica como MULHER CIS!");
 			System.out.println("============================================");
 		}
 		else if(objeto.getGenero() == 3) {
 			System.out.println("============================================");
-			System.out.println("Perfeito. VocÃª se identifica como homem trans!");
+			System.out.println("Perfeito. Você se identifica como HOMEM TRANS!");
 			System.out.println("============================================");
 		}
 		else if(objeto.getGenero() == 4) {
 			System.out.println("============================================");
-			System.out.println("Perfeito. Você se identifica como mulher trans!");
+			System.out.println("Perfeito. Você se identifica como MULHER TRANS!");
 			System.out.println("============================================");
 		}
 		else if(objeto.getGenero() == 5) {
 			System.out.println("============================================");
-			System.out.println("Perfeito. Você se identifica como Não Binárie!");
+			System.out.println("Perfeito. Você se identifica como NÃO BINÁRIE!");
 			System.out.println("============================================");
 		}
 		else if (objeto.getGenero() == 6) {
 			System.out.println("============================================");
-			System.out.println("Perfeito, respeitamos sua privacidade!");
+			System.out.println("Sem problemas, respeitamos sua privacidade!");
 			System.out.println("============================================");
 		}
 		else{
@@ -46,7 +59,7 @@ public class condicionalGen extends genero{
 			condGen(objeto);
 			}	
 		
-		}while(objeto.getGenero() == 0);// precisa voltar pras opÃ§Ãµes
+		}while(objeto.getGenero() == 0);
 		
 	}
 }

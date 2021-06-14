@@ -1,29 +1,23 @@
-package br.com.generation.menu2;
+package projeto_generation;
 
 
-public class Regiao extends informacoesPs{
+public class regiaoSP extends informacoesPs{
 	
-	
-	
-	public  void Regiao() {
+	public void regiao() {
 
-
-	System.out.println("Em qual região de São Paulo você mora?");
+	System.out.println("Em qual região de São Paulo você mora?\n");
 	String  string [] = new String [4];
-	
-	
+		
 	string[0] = "Protocolo: Ghetsksjdksfjsfsd89";
 	string[1] = "Protocolo: Ghetsdadadhasjkd78";		
 	string[2] = "Protocolo: Ghetsdadadhdjdsdd55";
 	string[3] = "Protocolo: Ghetsdadadddsdswut71";		
 			
-	System.out.println("[1] --->" + "Zona Norte\n");
-	System.out.println("[2] --->" + "Zona Sul\n");
-	System.out.println("[3] --->" + "Zona Leste\n");
-	System.out.println("[4] --->" + "Zona Oeste\n");
-	
-	
-	
+	System.out.println("[1] Zona Norte");
+	System.out.println("[2] Zona Sul");
+	System.out.println("[3] Zona Leste");
+	System.out.println("[4] Zona Oeste");
+			
 	setReg(sc.nextInt());
 	
 	if(getReg()==1) {
